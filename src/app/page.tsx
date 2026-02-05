@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { Button } from "@/components/ui/button";
 import { Leaf, Award, Shield } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   // Refs for GSAP animations
@@ -112,7 +113,7 @@ export default function Home() {
       {/* Hero Section with Fixed Background */}
       <section 
         ref={heroRef}
-        className="relative h-screen bg-[url('/images/home-oil.jpg')] bg-cover bg-center bg-no-repeat bg-fixed"
+        className="relative h-screen bg-[url('/images/oil-background.png')] bg-cover bg-center bg-no-repeat bg-fixed"
       >
         <div className="absolute inset-0 bg-black/40" />
         <div className="container relative z-10 flex flex-col items-center justify-center h-full px-4">
@@ -125,17 +126,20 @@ export default function Home() {
               <p ref={subtitleRef} className="mt-4 text-xl text-white max-w-2xl">
                 Cold-pressed, organic oils for health and wellness
               </p>
+
               <Button 
                 ref={buttonRef}
                 size="lg" 
                 className="mt-8 gap-2 bg-amber-800 hover:bg-amber-900"
               >
+                 <Link className="flex items-center gap-2"  href="/products">
                 <Leaf className="w-5 h-5" /> Shop Now
+                 </Link>
               </Button>
             </div>
 
             {/* Oil Bottle Image */}
-            <div className="relative w-full h-96 lg:h-[500px]">
+            {/* <div className="relative w-full h-96 lg:h-[500px]">
               <Image
                 src="/images/cooking_oil.png"
                 alt="Premium Oil Bottle"
@@ -144,7 +148,7 @@ export default function Home() {
                 priority
                 quality={85}
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

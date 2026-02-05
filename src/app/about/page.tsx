@@ -130,7 +130,7 @@ export default function About() {
           ref={imageRef}
           className="relative h-64 md:h-96 rounded-xl overflow-hidden shadow-lg"
         >
-          <div className="absolute inset-0 bg-[url('/oil-farm.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('/images/collection_of_Oils.jpeg')] bg-cover bg-center" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
             <p className="text-sm font-medium">Our family farm in Kerala</p>

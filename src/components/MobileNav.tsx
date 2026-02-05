@@ -3,6 +3,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 export default function MobileNav({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
   const mobileNavRef = useRef<HTMLDivElement>(null);
