@@ -1,5 +1,5 @@
 import { Resend } from 'resend';
-import{APIS} from "../../src/constent/const.ts"
+import{APIS} from "../../constent/const.ts"
 
 // Initialize Resend with your API key
 const resend = new Resend(APIS.RESEND_API_KEY);
